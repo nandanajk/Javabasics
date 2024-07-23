@@ -1,0 +1,28 @@
+public class Main
+{
+	public static void main(String[] args) {
+     
+    String s1=new String("You cannnot change mee");
+    String s2=new String("You cannnot change mee");
+    System.out.println(s1==s2);
+    
+    String s3="You cannnot change mee";
+    System.out.println(s1==s3);
+    
+    String s4="You cannnot change mee";
+    System.out.println(s4==s3);
+     String s5="You cannnot"+" change mee";// constants perfom concatenation at compile tyme only so not required to perform special intialization!
+    System.out.println(s4==s5);
+    
+     String s6="You cannnot";// here String Concatenation is performed at runtyme so it is not possible to change return true!
+     String s7=s6+"change mee";
+    System.out.println(s4==s7);
+         
+    final String s8="You cannnot";
+    String s9=s8+" change mee";// If any variable declared as final then that variable is trated at compile time only !!
+    System.out.println(s9==s3);
+         
+    
+
+	}
+}
